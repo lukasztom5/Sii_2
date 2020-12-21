@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Random;
 
 public class TestBase {
-    WebDriver driver;
+    protected WebDriver driver;
     @BeforeMethod
     public void setup(){
         WebDriverManager.chromedriver().setup();

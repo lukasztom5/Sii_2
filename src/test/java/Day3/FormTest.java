@@ -33,6 +33,9 @@ public class FormTest extends TestBase{
         List<WebElement> yearsOfExpirience = driver.findElements(By.name("gridRadiosExperience"));
         getRandomElement(yearsOfExpirience).click();
 
+        WebElement manualTester = driver.findElement(By.id("gridCheckManulTester"));
+        manualTester.click();
+
         WebElement additionalInfo = driver.findElement(By.cssSelector("#additionalInformations"));
         additionalInfo.sendKeys("Test");
 
